@@ -1,5 +1,5 @@
 The content of this project is book tickets.
-It has designed by **DOM** and **Tailwind CSS** with **Daisy UI**.
+It has designed by **DOM** and **Tailwind CSS** with **Daisy UI.**
 
 You can view the live, click to the link below.
 
