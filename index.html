@@ -10,24 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Raleway font -->
-
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Inter font -->
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Font awesome CDN -->
-
     <script src="https://kit.fontawesome.com/688e7a57b2.js" crossorigin="anonymous"></script>
 
     <!-- Daisy UI and Tailwind CDN -->
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- CSS Link -->
-
     <link rel="stylesheet" href="style.css">
 
     <script>
@@ -59,8 +54,9 @@
         <header class="w-11/12 mx-auto">
             <!-- Navigation Menu Content -->
             <nav class="flex justify-between items-center py-2 relative">
-                <div>
-                    <h4 class="text-2xl text-purple-400 font-extrabold">Mahim-Z-Ticket</h4>
+                <div class="flex sm:justify-start gap-2 justify-center items-center text-3xl font-extrabold capitalize text-purple-400">
+                    <img width="50" src="/assets/favicon.png" alt="" />
+                    <span>Mahim-Z-Ticket</span>
                 </div>
                 <ul class="sm:flex hidden gap-5">
                     <li>
@@ -127,7 +123,7 @@
                         <div class="absolute text-white text-center">
                             <h2 class="lg:text-6xl md:text-5xl text-3xl font-extrabold flex flex-col">
                                 <span class="">End-to-End Travel with</span>
-                                <span class="text-primary">Dublin bus</span>
+                                <span class="text-primary">MZ bus</span>
                             </h2>
                             <p class="my-5 sm:w-4/6 w-11/12 mx-auto font-Inter sm:text-lg text-base font-semibold">
                                 Yes, you can run unit tests and view the results directly within
@@ -267,7 +263,7 @@
                 <!-- section heading -->
                 <div id="section-heading" class="text-center">
                     <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold text-secondary capitalize">
-                        Dublin Ticket Counter
+                        MZ Ticket Counter
                     </h3>
                     <p class="text-body font-Inter lg:w-2/5 md:w-4/5 w-11/12 mx-auto py-2">
                         Yes, you can run unit tests and view the results directly within the
@@ -583,30 +579,34 @@
                     </section>
             </main>
 
+            <!-- Footer Start -->
+
             <footer class="bg-secondary text-white">
                 <div class="w-11/12 mx-auto py-20">
                     <div class="flex sm:flex-row flex-col sm:gap-0 gap-5 justify-between items-center">
                         <div class="text-center sm:text-left">
-                            <div class="flex sm:justify-start justify-center items-center text-3xl font-semibold capitalize">
-                                <img width="50" src="./assets/favicon.png" alt="" />
-                                <span>Dublin Bus</span>
+                            <div class="flex sm:justify-start gap-2 justify-center items-center text-3xl font-bold text-purple-400 capitalize pb-3">
+                                <img width="44" src="/assets/favicon.png" alt="" />
+                                <span>Mahim-Z-Ticket</span>
                             </div>
-                            <p class="font-Inter text-white/80 text-sm">
-                                Dublin Bus is a digital platform to make your <br />
+                            <p class="font-Inter font-semibold text-white/80 text-base">
+                                It is a digital platform to make your <br />
                                 daily commuting better.
                             </p>
                         </div>
                         <div class="text-center">
-                            <h3 class="mb-2">Download our app</h3>
-                            <img src="./assets/google.png" alt="" />
+                            <h3 class="mb-2 font-semibold">Download our app</h3>
+
+                            <a href="#">
+                            <img src="/assets/google.png" alt=""/>
+                        </a>
                         </div>
                     </div>
                     <div class="border-b-[1px] mt-10 border-dashed border-white/50"></div>
                     <div class="mt-10 font-Inter flex sm:flex-row flex-col-reverse justify-between text-white/80">
-                        <p class="text-center sm:text-left sm:mt-0 mt-10">@All Rights Reserved. Dublin Bus Services Limited 1912
-                            - 2024
+                        <p class="text-center font-medium sm:text-left sm:mt-0 mt-10">@All Rights Reserved. Mahim Z Ticket Services Limited 2021 - 2024
                         </p>
-                        <ul class="flex sm:flex-row flex-col items-center gap-5">
+                        <ul class="font-semibold flex sm:flex-row flex-col items-center gap-5">
                             <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Return & Refund Policy</a></li>
                             <li><a href="#">Privacy Policy</a></li>

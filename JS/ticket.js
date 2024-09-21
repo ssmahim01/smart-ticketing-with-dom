@@ -30,7 +30,6 @@ menuBtn.addEventListener('click', function(){
 
 let seatName = [];
 let totalPrice = 0;
-let grandTotalAvailable = [];
 
 function selectSeat(event){
 
