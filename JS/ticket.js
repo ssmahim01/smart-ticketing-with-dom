@@ -8,6 +8,8 @@ const availableSeat = document.getElementById('available-seat');
 const total_price = document.getElementById('total-price');
 const couponInput = document.getElementById('coupon-field');
 const couponBtn = document.getElementById('coupon-btn');
+const defaultText = document.getElementById('default-text');
+const grand_total = document.getElementById('grand-total');
 
 
 // Click menu
@@ -46,7 +48,10 @@ function selectSeat(event){
         const availableSeatText = parseFloat(availableSeat.innerText);
         const newSeatValue = availableSeatText - 1;
         availableSeat.innerText = newSeatValue;
+
+        // Hide Default text
     
+        defaultText.classList.add('hidden');
     
        selectedSeat.innerHTML += `
        <li class="text-base font-medium flex justify-between">
@@ -55,7 +60,7 @@ function selectSeat(event){
        <span>৳550</span>
        </li>
        `
-    
+
         // Update total price
     
         totalPrice += 550;
@@ -73,3 +78,35 @@ function selectSeat(event){
         return;
     }
 }
+
+// Event of coupon button
+
+document.getElementById('coupon-btn').addEventListener('click', function(){
+    let couponSave = 0;
+    const couponFieldValue = couponInput.value;
+
+    if(couponFieldValue !== "NEW50" && couponFieldValue !== "Couple 20"){
+        alert('Your provided coupon is not valid!');
+        return;
+    }
+
+    if(couponFieldValue === 'NEW50'){
+        couponSave = totalPrice * .15;
+    }
+
+    else if(couponFieldValue === 'Couple 20'){
+        couponSave = totalPrice * .20;
+    }
+
+    const showCouponPrice = document.getElementById('show-coupon-price');
+    showCouponPrice.innerHTML = `
+    <p>Discount</p>
+    <p>
+    <span>-BDT: </span>
+    <span>${couponSave.toFixed(2)}</span>
+    </p>
+    `
+
+    const grandTotalValue = totalPrice - couponSave;
+    grand_total.innerText = grandTotalValue.toFixed(2);
+});

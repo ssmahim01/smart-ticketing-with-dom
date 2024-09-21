@@ -60,7 +60,7 @@
             <!-- Navigation Menu Content -->
             <nav class="flex justify-between items-center py-2 relative">
                 <div>
-                    <h4 class="text-2xl font-extrabold">P-Ticket</h4>
+                    <h4 class="text-2xl text-purple-400 font-extrabold">Mahim-Z-Ticket</h4>
                 </div>
                 <ul class="sm:flex hidden gap-5">
                     <li>
@@ -206,13 +206,13 @@
                 <!-- coupon cards -->
                 <div class="grid lg:grid-cols-2 gap-10 my-10">
                     <div
-                        class="bg-couponOne px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
+                        class="bg-couponOne sm:px-14 pr-16 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
                         <div class="z-10">
                             <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">15% OFF
                             </h3>
                             <h4 class="sm:text-2xl text-lg text-center sm:text-left font-semibold sm:py-1">on
                                 your next purchase</h4>
-                            <p class="text-xl tracking-widest text-body">
+                            <p class="text-xl tracking-widest text-body font-medium">
                                 use by February 2024
                             </p>
                         </div>
@@ -226,17 +226,17 @@
                         </div>
                         <div class="text-center z-10">
                             <h3 class="text-4xl font-extrabold text-secondary">NEW50</h3>
-                            <p class="text-lg text-body">Coupon Code</p>
+                            <p class="text-lg text-body font-medium">Coupon Code</p>
                         </div>
                     </div>
                     <div
-                        class="bg-couponTwo px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
+                        class="bg-couponTwo sm:px-14 pr-16 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
                         <div>
                             <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">20% OFF
                             </h3>
                             <h4 class="sm:text-2xl text-lg text-center sm:text-left font-semibold sm:py-1">on your next
                                 purchase</h4>
-                            <p class="text-xl tracking-widest text-body">
+                            <p class="text-xl tracking-widest text-body font-medium">
                                 use by February 2024
                             </p>
                         </div>
@@ -250,7 +250,7 @@
                         </div>
                         <div class="text-center z-10">
                             <h3 class="text-4xl font-extrabold text-secondary">Couple 20</h3>
-                            <p class="text-lg text-body">Coupon Code</p>
+                            <p class="text-lg text-body font-medium">Coupon Code</p>
                         </div>
                     </div>
                 </div>
@@ -504,7 +504,7 @@
                             <div class="border-b-2 border-dashed my-4"></div>
 
                             <ul id="selected-seat" class="space-y-5">
-                                <h3 class="text-3xl font-semibold text-error capitalize text-center">
+                                <h3 id="default-text" class="text-3xl font-semibold text-error capitalize text-center">
                                 No Seat Booked</h3>
                             </ul>
                        
@@ -518,7 +518,7 @@
                         </div>
                         <div class="border-b-2 border-dashed my-4"></div>
 
-                        <div class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
+                        <div id="show-coupon-price" class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
                             <input id="coupon-field" type="text" placeholder="Have a Coupon?" class="input input-primary border-primary w-full my-5" disabled>
                             <button id="coupon-btn" class="btn btn-primary" disabled>Apply</button>
                         </div>
@@ -527,7 +527,7 @@
                             <p class="font-semibold">Grand Total</p>
                             <p class="font-semibold">
                                 <span>BDT:</span>
-                                <span>****</span>
+                                <span id="grand-total">****</span>
                             </p>
                         </div>
                     </div>
