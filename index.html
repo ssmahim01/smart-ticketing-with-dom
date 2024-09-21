@@ -495,7 +495,7 @@
                                 <h3 class="flex justify-between">
                                     <p class="flex">
                                         <span class="font-semibold">Seat</span>
-                                        <span class="w-4 h-4 p-2 text-white bg-primary flex justify-center items-center font-medium rounded-full text-sm">0</span>
+                                        <span id="total-booked" class="w-4 h-4 p-2 text-white bg-primary flex justify-center items-center font-medium rounded-full text-sm">0</span>
                                     </p>
                                     <p class="font-semibold">Class</p>
                                     <p class="font-semibold">Price</p>
@@ -513,14 +513,14 @@
                             <p class="font-semibold">Total Price</p>
                             <p class="font-semibold">
                                 <span>BDT:</span>
-                                <span>****</span>
+                                <span id="total-price">****</span>
                             </p>
                         </div>
                         <div class="border-b-2 border-dashed my-4"></div>
 
                         <div class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                            <input type="text" placeholder="Have a Coupon?" class="input input-primary border-primary w-full my-5" disabled>
-                            <button class="btn btn-primary" disabled>Apply</button>
+                            <input id="coupon-field" type="text" placeholder="Have a Coupon?" class="input input-primary border-primary w-full my-5" disabled>
+                            <button id="coupon-btn" class="btn btn-primary" disabled>Apply</button>
                         </div>
 
                         <div class="text-lg flex justify-between">
