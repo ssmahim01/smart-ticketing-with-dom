@@ -10,7 +10,10 @@ const couponInput = document.getElementById('coupon-field');
 const couponBtn = document.getElementById('coupon-btn');
 const defaultText = document.getElementById('default-text');
 const grand_total = document.getElementById('grand-total');
-
+const nextBtn = document.getElementById('next-btn');
+const passengerName = document.getElementById('name-passenger');
+const phoneNumber = document.getElementById('phone-number');
+const emailAddress = document.getElementById('email-address');
 
 // Click menu
 
@@ -27,6 +30,7 @@ menuBtn.addEventListener('click', function(){
 
 let seatName = [];
 let totalPrice = 0;
+let grandTotalAvailable = [];
 
 function selectSeat(event){
 
@@ -106,7 +110,26 @@ document.getElementById('coupon-btn').addEventListener('click', function(){
     <span>${couponSave.toFixed(2)}</span>
     </p>
     `
-
     const grandTotalValue = totalPrice - couponSave;
     grand_total.innerText = grandTotalValue.toFixed(2);
+});
+
+
+// Enable Button
+
+phoneNumber.addEventListener('keyup', function(event){
+    const inputValue = event.target.value;
+    if(inputValue.length >= 11){
+        nextBtn.removeAttribute('disabled');
+    }
+});
+
+document.getElementById('btn-continue').addEventListener('click', function(){
+    window.location.reload();
+});
+
+couponBtn.addEventListener('click', function(){
+        passengerName.removeAttribute('disabled');
+        phoneNumber.removeAttribute('disabled');
+        emailAddress.removeAttribute('disabled');
 });
