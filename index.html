@@ -54,9 +54,9 @@
         <header class="w-11/12 mx-auto">
             <!-- Navigation Menu Content -->
             <nav class="flex justify-between items-center py-2 relative">
-                <div class="flex sm:justify-start gap-2 justify-center items-center text-3xl font-extrabold capitalize text-purple-400">
-                    <img width="50" src="/assets/favicon.png" alt="" />
-                    <span>Mahim-Z-Ticket</span>
+                <div class="flex sm:justify-start gap-2 justify-center items-center sm:text-2xl text-xl font-extrabold capitalize text-purple-400">
+                    <img width="32" src="assets/favicon.png" alt="" />
+                    <span>MZ-Ticket</span>
                 </div>
                 <ul class="sm:flex hidden gap-5">
                     <li>
@@ -64,12 +64,11 @@
                             href="#">Home</a>
                     </li>
                     <li>
-                        <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
-                            href="#">About Us</a>
+                        <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out" href="#about-mz">About Us</a>
                     </li>
                     <li>
                         <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
-                            href="#">Destination</a>
+                            href="#destination">Destination</a>
                     </li>
                     <li>
                         <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
@@ -77,15 +76,15 @@
                     </li>
                     <li class="md:hidden lg:block">
                         <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
-                            href="#">Contact Us</a>
+                            href="#footer">Contact Us</a>
                     </li>
                 </ul>
                 <div class="flex items-center gap-5">
-                    <button
+                    <a href="#bus"
                         class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary hover:bg-transparent">
                         <span>Bus</span>
                         <i class="fa-solid fa-van-shuttle"></i>
-                    </button>
+                    </a>
                     <button id="menu-btn" class="sm:hidden block">
                         <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
                         <i id="close-icon"
@@ -129,10 +128,9 @@
                                 Yes, you can run unit tests and view the results directly within
                                 the app. The integrated testing features allow for a streamlined.
                             </p>
-                            <button
-                                class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary font-extrabold uppercase text-secondary hover:bg-transparent">
+                            <a href="#seat-book" class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary font-extrabold uppercase text-secondary hover:bg-transparent">
                                 Buy Tickets
-                            </button>
+                            </a>
                         </div>
     
                         <!-- slider navigation -->
@@ -156,7 +154,7 @@
             <section id="statistics"
                 class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-9/12 w-11/12 mx-auto sm:-mt-20">
                 <!-- Card One -->
-                <div
+                <div id="about-mz"
                     class="flex items-center gap-6 border-b-2 border-primary px-10 py-8 rounded-3xl shadow-lg bg-white z-[1]">
                     <div>
                         <i class="fa-solid fa-users text-primary text-5xl"></i>
@@ -251,15 +249,15 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button
+                    <a href="#offers"
                         class="btn btn-primary bg-transparent px-10 hover:bg-primary hover:text-secondary border-primary hover:border-primary text-primary font-bold">
                         See All Offers
-                    </button>
+                    </a>
                 </div>
             </section>
     
             <!-- Services Section Start -->
-            <section class="bg-mobileMenu py-20 rounded-t-3xl border-t-2 border-primary">
+            <section id="bus" class="bg-mobileMenu py-20 rounded-t-3xl border-t-2 border-primary">
                 <!-- section heading -->
                 <div id="section-heading" class="text-center">
                     <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold text-secondary capitalize">
@@ -271,7 +269,7 @@
                     </p>
                 </div>
                 <!-- Current available Bus Services -->
-                <section class="w-11/12 mx-auto my-10">
+                <section class="w-11/12 mx-auto my-10" id="destination">
                     <div
                         class="bg-white sm:px-8 px-4 py-10 rounded-2xl shadow-sm font-Inter relative overflow-hidden grid sm:grid-cols-3 sm:gap-20 gap-10 justify-center items-center">
                         <div class="sm:col-span-2">
@@ -335,7 +333,7 @@
 
                 <!-- Seat Booking Section -->
 
-                <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid lg:grid-cols-3 grid-cols-1 gap-5">
+                <section id="seat-book" class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid lg:grid-cols-3 grid-cols-1 gap-5">
 
                     <div class="col-span-2">
                         <div class="sm:text-left text-center">
@@ -505,7 +503,7 @@
                             </ul>
                        
                         <div class="border-b-2 border-dashed my-4"></div>
-                        <div class="text-lg flex justify-between">
+                        <div id="offers" class="text-lg flex justify-between">
                             <p class="font-semibold">Total Price</p>
                             <p class="font-semibold">
                                 <span>BDT:</span>
@@ -569,9 +567,9 @@
                     </form>
                 </dialog>
                 <div class="flex justify-between mt-5">
-                    <a href="#" class="underline font-bold hover:text-primary transition-colors duration-200 ease-in-out">Terms & Conditions</a>
+                    <a href="#" class="underline font-bold hover:text-primary transition-colors duration-200 ease-in-out text-center">Terms & Conditions</a>
 
-                    <a href="#" class="underline font-bold hover:text-primary transition-colors duration-200 ease-in-out">Cancellation Policy</a>
+                    <a href="#" class="underline font-bold hover:text-primary transition-colors duration-200 ease-in-out text-center">Cancellation Policy</a>
                 </div>
                     </div>
                         </section>
@@ -581,15 +579,15 @@
 
             <!-- Footer Start -->
 
-            <footer class="bg-secondary text-white">
+            <footer class="bg-secondary text-white" id="footer">
                 <div class="w-11/12 mx-auto py-20">
                     <div class="flex sm:flex-row flex-col sm:gap-0 gap-5 justify-between items-center">
                         <div class="text-center sm:text-left">
-                            <div class="flex sm:justify-start gap-2 justify-center items-center text-3xl font-bold text-purple-400 capitalize pb-3">
-                                <img width="44" src="/assets/favicon.png" alt="" />
+                            <div class="flex sm:justify-start gap-2 justify-center items-center text-2xl font-bold text-purple-400 capitalize pb-3">
+                                <img width="40" src="assets/favicon.png" alt="" />
                                 <span>Mahim-Z-Ticket</span>
                             </div>
-                            <p class="font-Inter font-semibold text-white/80 text-base">
+                            <p class="font-Inter font-semibold text-white/80 text-sm">
                                 It is a digital platform to make your <br />
                                 daily commuting better.
                             </p>
